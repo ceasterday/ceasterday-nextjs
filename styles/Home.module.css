@@ -5,3 +5,9 @@
   align-items: center;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 754px){
+  .main {
+    justify-content: flex-start;
+  }
+}
