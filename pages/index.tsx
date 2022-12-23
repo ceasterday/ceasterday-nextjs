@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
+import ceasterday from '../public/ceasterdayd.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,10 +39,14 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           priority
-          src="/ceasterdayd.png"
-          alt="yuo just got ceaterday'd"
-          width={755}
-          height={521}
+          src={ceasterday}
+          alt="yuo just got ceasterday'd"
+          title="yuo just got ceasterday'd"
+          style={{
+            maxWidth: 755,
+            width: '100%',
+            height: 'auto',
+          }}
         />
       </main>
     </>
